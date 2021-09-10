@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Art Fine Canvas</title>
+    <link rel="shortcut icon" href="images/л1.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="conteinerGlav">
+        <form method="post" action="dist/php/clients/createCom.php">
+            <div class="titGlav">
+                <h3>Здравствуйте!<br> Прошу Вас уделить мне одну минуту вашего драгоценого времени <br><br> Мы можем улучшить сервис с Вашей помошью!<br> Ответьте пожалуйста на вопрос внизу<br> Это займет всего лишь пару мгновений  </h3>
+            </div>
+            <div class="user" id="main">
+                <label for="username">Ваше имя</label><br>
+                <input type="text" id="username" name="name" placeholder="Алексей" /><br>
+                <label for="text">Откуда Вы узнали о Нас</label><br>
+                <textarea id="text" cols="15" rows="5" name="commentuser" placeholder="Например: instagram"></textarea><br>
+                <input type="submit" value="Отправить">
+            </div>
+          </form>
+    </div>
+    <script src="dist/js/jquery-3.6.0.min.js"></script>
+    <script src="dist/js/modal-window.js" ></script>
+    <script src="dist/js/modal.js"></script>
+
+</body>
+</html>
