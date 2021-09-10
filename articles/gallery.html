@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<title>Fine Art Canvas</title>
+	<link rel="shortcut icon" href="images/л1.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/3.css">
+</head>
+<body>
+	<div class="m">
+		<ul class="menu">
+  			<li><a href="index.html">ГЛАВНАЯ</a></li>
+  			<li><a href="articles.html">СТАТЬИ</a></li>
+  			<li><a href="" class="on">ГАЛЕРЕЯ</a></li>
+			<li><a href="products.html">ТОВАРЫ</a></li>
+  </ul>
+	</div>
+	<div class="logo">
+		<img src="images/лого4.jpg" alt="">
+</div>
+	<div class="tit">
+	<p><b>Картины - Маслом на холсте!</b></p>
+</div>
+	<div class="post">
+						
+						<div class="modal" id="myModal">
+			<span class="close" onclick="document.getElementById('myModal1').style.display='none'">&times;</span>
+			<img class="modal-content" id="img01"  alt=""> 
+			<div id="caption"> </div>
+							</div>
+
+
+							<div class="modal" id="myModalOs">
+								<span class="closeOs" onclick="document.getElementById('myModalOs').style.display='none'">&times;</span>
+								<div class="conteinerGlav">
+								<form method="post" action="dist/php/telegram/telegram.php" id="formOs" class="modal-content">
+									<div class="titGlav">
+										<h3>Здравствуйте!<br> Это форма обратной связи<br>Мы Вам обязательно перезвоним! </h3>
+									</div>
+										<label for="username">Ваше имя</label><br>
+										<input type="text" id="username" name="name" placeholder="Алексей" maxlenght="13" /><br>
+										<Label for="tel">Ваш телефон</Label><br>
+										<input type="tel" id="tel" name="tel" placeholder="7(988)888-88-88" maxlenght="13"><br>
+										<label for="email">Ваша почта</label><br>
+										<input type="email" id="email" name="email" placeholder="mai@maul.ru"><br>
+										<input type="submit" value="Отправить">
+								  </form> 
+								 </div>
+								</div>
+
+
+								<div class="modal" id="myModalCanvas">
+									<span class="closeCanvas" onclick="document.getElementById('myModalCanvas').style.display='none'">&times;</span>
+									<div class="conteinerGlav">
+										<form method="post" action="dist/php/clients/createPaintings.php" id="formOs" class="modal-content">
+											<div class="titGlav">
+												<h3 id="titCanvas">Здравствуйте!</h3><br>
+											</div>
+											<legend id="myleg"></legend>
+											<label for="username">Ваше имя</label><br>
+											<input type="text" id="name" name="name" placeholder="Алексей" /><br>
+											<label for="email">Адрес электронной почты:</label><br>
+											<input type="email" id="email" name="email" placeholder="mail@mail.ru" /><br>
+											<label for="tell">Ваш номер телефона</label><br>
+											<input type="tel" id="tel" name="tel" placeholder="+79888888888" /><br>
+											<input type="hidden" id="hidInp" name="product" value="" >
+											<input type="submit" value="Заказать" />
+
+									  </form>
+
+									</div>
+								  </div>
+				
+				
+				<div class="p1">
+	<img src="Canvas/1.jpg" alt="В лесу 74х55"  id="myImg1">
+	<p id="s1"><i id="q"><b>В лесу</b></i><br> Размер:74х55<br>Цена: 9 000 руб.</p>
+	<button type="submit" id="opemModaC1" >Заказать</button>
+	<input type="hidden" id="prodName" value="В лесу 74х55">
+	<input type="hidden" id="prodNameHidden" value="V lesu">
+				</div>
+
+
+					
+
+				<div class="p1">
+	<img src="Canvas/3.jpg" alt="Веселые музыканты 50х60" id="myImg2">
+	<p id="s1"><i id="q"><b>Веселые музыканты</b></i><br> Размер:50х60<br>Цена: 5 000 руб. </p>
+	<button type="submit" id="opemModaC2">Заказать</button>
+	<input type="hidden" id="prodName2" value="Веселые музыканты 50х60">
+	<input type="hidden" id="prodNameHidden2" value="veselie muzikanti">
+</div>	
+	
+
+
+				<div class="p1">
+	<img src="Canvas/8.jpg" alt="Маки на побережье 60х90" id="myImg3">
+	<p id="s1"><i id="q"><b>Маки на побережье</b></i><br> Размер:60х90<br>Цена: 10 000 руб. </p>
+	<button type="submit" id="opemModaC3">Заказать</button>
+	<input type="hidden" id="prodName3" value="Маки на побережье 60х90">
+	<input type="hidden" id="prodNameHidden3" value="maki">
+</div>
+
+				<div class="p1">
+	<img src="Canvas/5.jpg" alt="Заросщий пруд 75х55" id="myImg4">
+	<p id="s1"><i id="q"><b>Заросщий пруд</b></i><br> Размер:75х55<br>Цена: 8 000 руб. </p>
+	<button type="submit" id="opemModaC4">Заказать</button>
+	<input type="hidden" id="prodName4" value="Заросщий пруд 75х55">
+	<input type="hidden" id="prodNameHidden4" value="Zaroshii prud">				
+</div>
+
+				<div class="p1">
+	<img src="Canvas/12.jpg" alt="Романтическая композиция 63х92" id="myImg5">
+	<p id="s1"><i id="q"><b>Романтическая композиция </b></i><br> Размер:63х92<br>Цена: 7 000 руб. </p>
+	<button type="submit" id="opemModaC5">Заказать</button>
+	<input type="hidden" id="prodName5" value="Романтическая композиция 63х92">	
+	<input type="hidden" id="prodNameHidden5" value="romanticheskaya kompoziciya">				
+</div>
+
+				<div class="p1">
+	<img src="Canvas/27.jpg" alt="Яркая осень 110х75" id="myImg6">
+	<p id="s1"><i id="q"><b>Яркая осень</b></i><br> Размер:110х75<br>Цена: 15 000 руб. </p>
+	<button type="submit" id="opemModaC6">Заказать</button>
+	<input type="hidden" id="prodName6" value="Яркая осень 110х75">	
+	<input type="hidden" id="prodNameHidden6" value="yarkaya osen">				
+</div>
+
+				<div class="p1">
+	<img src="Canvas/4.jpg" alt="Дубы Петра Великого 117х75" id="myImg7">
+	<p id="s1"><i id="q"><b>Дубы Петра Великого</b></i><br> Размер:117х75<br>Цена: 100 000 руб. </p>
+	<button type="submit" id="opemModaC7">Заказать</button>
+	<input type="hidden" id="prodName7" value="Дубы Петра Великого 117х75">	
+	<input type="hidden" id="prodNameHidden7" value="dubi petra velikogo">
+</div>
+
+				<div class="p1">
+	<img src="Canvas/9.jpg" alt="На всех не хватит 55х74" id="myImg8">
+	<p id="s1"><i id="q"><b>На всех не хватит </b></i><br> Размер:55х74<br>Цена: 5 000 руб. </p>
+	<button type="submit" id="opemModaC8">Заказать</button>
+	<input type="hidden" id="prodName8" value="На всех не хватит 55х74">	
+	<input type="hidden" id="prodNameHidden8" value="Na vseh ne hvatit">
+</div>
+
+				<div class="p1">
+	<img src="Canvas/10.jpg" alt="Побережье 75х55" id="myImg9">
+	<p id="s1"><i id="q"><b>Побережье</b></i><br> Размер:75х55<br>Цена: 5 000 руб. </p>
+	<button type="submit" id="opemModaC9">Заказать</button>
+	<input type="hidden" id="prodName9" value="Побережье 75х55">
+	<input type="hidden" id="prodNameHidden9" value="pobereje">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/11.jpg" alt="Родные просторы 100х70" id="myImg10">
+	<p id="s1"><i id="q"><b>Родные просторы</b></i><br> Размер:100х70<br>Цена: 15 000 руб.</p>
+	<button type="submit" id="opemModaC10">Заказать</button>
+	<input type="hidden" id="prodName10" value="Родные просторы 100х70">	
+	<input type="hidden" id="prodNameHidden10" value="rodnie prostori">					
+</div>
+
+
+				<div class="p1">
+	<img src="Canvas/13.jpg" alt="Рыжий Кот 55х74" id="myImg12">
+	<p id="s1"><i id="q"><b>Рыжий Кот</b></i><br> Размер:55х74<br>Цена: 5 000 руб.</p>
+	<button type="submit" id="opemModaC11">Заказать</button>
+	<input type="hidden" id="prodName11" value="Рыжий Кот 55х74">
+	<input type="hidden" id="prodNameHidden11" value="rijiy kot">				
+</div>
+
+				<div class="p1">
+	<img src="Canvas/14.jpg" alt="С ключем 74х55" id="myImg13">
+	<p id="s1"><i id="q"><b>С ключем</b></i><br> Размер:74х55<br>Цена: 5 000 руб. </p>
+	<button type="submit" id="opemModaC13">Заказать</button>
+	<input type="hidden" id="prodName13" value="С ключем 74х55">	
+	<input type="hidden" id="prodNameHidden13" value="s klychom">						
+</div>
+
+				<div class="p1">
+	<img src="Canvas/16.jpg" alt="Кавказский пейзаж 61х92" id="myImg14">
+	<p id="s1"><i id="q"><b>Кавказский пейзаж</b></i><br> Размер:61х92<br>Цена: 30 000 руб. </p>
+	<button type="submit" id="opemModaC14">Заказать</button>
+	<input type="hidden" id="prodName14" value="Кавказский пейзаж 61х92">
+	<input type="hidden" id="prodNameHidden14" value="kavkazskii peizaj">	
+</div>
+
+				<div class="p1">
+	<img src="Canvas/17.jpg" alt="Сирень 60х80" id="myImg15">
+	<p id="s1"><i id="q"><b>Сирень</b></i><br> Размер:60х80<br>Цена: 9 000 руб. </p>
+	<button type="submit" id="opemModaC15">Заказать</button>
+	<input type="hidden" id="prodName15" value="Сирень 60х80">
+	<input type="hidden" id="prodNameHidden15" value="siren">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/18.jpg" alt="Такой конь 66х77" id="myImg16">
+	<p id="s1"><i id="q"><b>Такой конь</b></i><br> Размер:66х77<br>Цена: 7 000 руб. </p>
+	<button type="submit" id="opemModaC16">Заказать</button>
+	<input type="hidden" id="prodName16" value="Такой конь 66х77">	
+	<input type="hidden" id="prodNameHidden16" value="takoi kon">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/19.jpg" alt="Танец 60х90" id="myImg17">
+	<p id="s1"><i id="q"><b>Танец</b></i><br> Размер:60х90<br>Цена: 7 000 руб.</p>
+	<button type="submit" id="opemModaC17">Заказать</button>
+	<input type="hidden" id="prodName17" value="Танец 60х90">
+	<input type="hidden" id="prodNameHidden17" value="tanec">									
+</div>
+
+				<div class="p1">
+	<img src="Canvas/20.jpg" alt="Формула Медио 50х70" id="myImg18">
+	<p id="s1"><i id="q"><b>Формула Медио</b></i><br> Размер:50х70<br>Цена: 5 000 руб.</p>
+	<button type="submit" id="opemModaC18">Заказать</button>
+	<input type="hidden" id="prodName18" value="Формула Медио 50х70">	
+	<input type="hidden" id="prodNameHidden18" value="formula medio">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/21.jpg" alt="Царь Рыба 60х70" id="myImg19">
+	<p id="s1"><i id="q"><b>Царь Рыба</b></i><br> Размер:60х70<br>Цена: 7 000 руб.</p>
+	<button type="submit" id="opemModaC19">Заказать</button>
+	<input type="hidden" id="prodName19" value="Царь Рыба 60х70">
+	<input type="hidden" id="prodNameHidden19" value="car riba">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/22.jpg" alt="Цветущая побережье 80х90" id="myImg20">
+	<p id="s1"><i id="q"><b>Цветущая побережье</b></i><br> Размер:80х90<br>Цена: 15 000 руб.</p>
+	<button type="submit" id="opemModaC20">Заказать</button>
+	<input type="hidden" id="prodName20" value="Цветущая побережье 80х90">
+	<input type="hidden" id="prodNameHidden20" value="Cvetushaya pobereje">					
+</div>
+
+				<div class="p1">
+	<img src="Canvas/23.jpg" alt="Цветы 60х70" id="myImg21">
+	<p id="s1"><i id="q"><b>Цветы</b></i><br> Размер:60х70<br>Цена: 5 000 руб.</p>
+	<button type="submit" id="opemModaC21">Заказать</button>
+	<input type="hidden" id="prodName21" value="Цветы 60х70">
+	<input type="hidden" id="prodNameHidden21" value="cveti 60x70">							
+</div>
+
+				<div class="p1">
+	<img src="Canvas/24.jpg" alt="Цветы 75х55" id="myImg22">
+	<p id="s1"><i id="q"><b>Цветы </b></i><br> Размер:75х55<br>Цена: 7 000 руб. </p>
+	<button type="submit" id="opemModaC22">Заказать</button>
+	<input type="hidden" id="prodName22" value="Цветы 75х55">
+	<input type="hidden" id="prodNameHidden22" value="Cveti 75x55">						
+</div>
+
+				<div class="p1">
+	<img src="Canvas/25.jpg" alt="Цветы в вазе 50х60" id="myImg23">
+	<p id="s1"><i id="q"><b>Цветы в вазе</b></i><br> Размер:50х60<br>Цена: 5 500 руб.</p>
+	<button type="submit" id="opemModaC23">Заказать</button>
+	<input type="hidden" id="prodName23" value="Цветы в вазе 50х60">
+	<input type="hidden" id="prodNameHidden23" value="cveti v vaze">						
+</div>
+
+				<div class="p1">
+	<img src="Canvas/26.jpg" alt="Цветы на столе 90х60" id="myImg24">
+	<p id="s1"><i id="q"><b>Цветы на столе</b></i><br> Размер:90х60<br>Цена: 7 000 руб.</p>
+	<button type="submit" id="opemModaC24">Заказать</button>
+	<input type="hidden" id="prodName24" value="Цветы на столе 90х60">	
+	<input type="hidden" id="prodNameHidden24" value="cveti na stole">				
+</div>
+
+				<div class="p1">
+	<img src="Canvas/7.jpg" alt="К свету 98х72" id="myImg25">
+	<p id="s1"><i id="q"><b>К свету</b></i><br> Размер:98х72<br>Цена: 9 000 руб.</p>
+	<button type="submit" id="opemModaC25">Заказать</button>
+	<input type="hidden" id="prodName25" value="К свету 98х72">
+	<input type="hidden" id="prodNameHidden25" value="k svetu">						
+</div> 
+
+						</div>
+	<div class="footer" id="foot">
+      	<img src="images/tg.jpg" id="ObrSv">
+    </div>
+	<script src="dist/js/jquery-3.6.0.min.js"></script>
+	<script src="dist/js/modal.js"></script>
+	
+</body>
+</html>

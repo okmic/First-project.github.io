@@ -1,0 +1,282 @@
+/* The Maker Bus Stylesheet */
+
+@import url(http://fonts.googleapis.com/css?family=Marmelad&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background-image: url(../img/fon.jpg);
+  background-color: rgb(16, 16, 16);
+  color: #666;
+  font-family: 'Open Sans', arial, sans-serif;
+  max-width: 100%;}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container{
+  margin-top: 130px;
+  max-width: 100%;
+}
+.m {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+  border-top: solid 1px #fff;
+  z-index: 10;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+a{
+  color:#D1BC8A;
+  text-transform: uppercase;
+  text-decoration: none;
+	padding: 6px 7px 5px 7px; 
+  font-size: 17px;
+}
+
+a:hover, a.on {
+  color: #cc3333;
+}
+
+
+.mycontg{
+  background-color: rgb(174, 172, 172);
+  position: relative;
+  top: 0;
+  left: 0;
+  border-top: #d71a00 double 3px;
+  border-left: #d71a00 double 3px;
+  border-bottom: #d71a00 double 3px;
+  display: flex;
+  max-width: 900px;
+  text-align: left;
+  padding: 30px;
+  margin: 50px auto;
+  overflow: hidden;}
+
+
+.mycontg>img { max-width: 500px;}
+.mycontg p {border-left: 1px solid #d71a00; }
+
+.descrProd {
+  border-left: 1px solid #000;
+  padding: 0 20px 0 20px;
+  margin: 13px 0 20px 30px;
+  display: inline-block;
+  line-height: 1.4em;
+}
+
+  button, .myButton{
+  width: 230px;
+  height: 50px;
+  font-size: 30px;
+  background-color: rgb(189, 134, 17);
+  color: rgb(255, 255, 255);
+  border: #ffffff double 3px;
+  cursor: pointer;
+  }
+
+ .buttonFormMy {
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  background-color: rgb(189, 134, 17);
+  color: rgb(255, 255, 255);
+  border: #ffffff double 3px;
+  cursor: pointer;
+ } 
+ 
+  button:hover{ color: rgb(255, 0, 0);}
+
+  .mycontg>img {max-width: 300px; max-height: 300px;}
+
+  
+  .button {
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  background-color: #ff5252;
+  text-align: center;
+  cursor: pointer;
+  } 
+  
+  .button span {
+  line-height: 60px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  }
+  
+  .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  z-index: 1000;
+  }
+  
+  .popup {
+  position: absolute;
+  max-width: 900px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #ff5252;
+  color: #fff;
+  }
+  
+  .close-popup {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  }
+  
+  .close-popup:before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  left: -4px;
+  transform: rotate(-45deg);
+  }
+  
+  .close-popup:after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  height: 1px;
+  width: 31px;
+  top: 11px;
+  transform: rotate(45deg);
+  left: -4px;
+  }
+
+/* Form=================================================>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.formCont{
+  max-width: 100%;
+max-height: 100%;
+}
+form {
+  font-family: 'Roboto Slab', georgia, times, serif;
+  max-width: 100%;
+max-height: 100%;
+  margin: 0 auto 0 auto;}
+
+.thirds {
+  background-color: #f8584a;
+  border: 12px solid #fff;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  overflow: hidden;}
+
+
+.thirds {max-width: 530px;}
+
+.thirds fieldset {border: none; margin: 2.5em;}
+
+
+
+/* FORM STYLES */
+legend {
+  font-size: 160%;
+  position: relative;
+  color: #fff;}
+
+
+input {
+  border: none;
+  padding: 8px;
+  line-height: 1.2em; 
+  margin-bottom: 1.4em;
+  font-size: 1.2em;}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tell"] {width: 90%;}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="tell"], input[type="number"]{
+  box-shadow: inset 0 2px 2px #000;
+  outline: 0;}
+
+input[type="submit"], #submit {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  float: right;
+  font-family: 'Roboto Slab', georgia, times, serif;
+  font-size: 19px;
+  margin-right: 30px;}
+
+input[type="submit"]:hover {
+  background-color: #666;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #000;
+  box-shadow: inset 0 2px 2px #000;}
+
+
+textarea {
+  max-width: 100%;
+  height: 5em;
+  clear: left;
+  border: none;}
+
+  .footer {
+    display: none;
+    justify-content: space-between;
+		max-height: 48px;
+	 	position: fixed;
+	 	left: 0;
+	 	right: 0;
+	 	bottom: 0;
+	 	display: flex;
+	  background-color: #000;
+    background-image: url(../images/lfa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+	  margin-top: 130px;
+	  padding: 3px 3px 0px;
+	  border-bottom: solid 1px #fff;
+	  border-top: solid 1px #fff;
+}
+.footer>img{
+		cursor: pointer;
+}
+
+  
+@media screen and (max-width: 900px) {
+  a{
+    color:#D1BC8A;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 8px 5px 18px; 
+    font-size: 30px;
+  }
+}
